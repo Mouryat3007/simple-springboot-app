@@ -10,6 +10,6 @@ public class HomeController {
 
     @GetMapping
     public String home() {
-        return "Hello, This is create by Mourya. Oner of the repo";
+        return "Hello, This is create by Mourya. Owner of the repo";
     }
 }
