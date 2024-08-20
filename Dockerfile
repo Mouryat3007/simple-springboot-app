@@ -1,18 +1,14 @@
-
-### `Dockerfile`
-
-```Dockerfile
-# Use a base image with JDK 21
+# Use an official OpenJDK runtime as a parent image
 FROM openjdk:17-jdk-slim
 
-# Set the working directory
+# Set the working directory in the container
 WORKDIR /app
 
-# Copy the JAR file into the container
+# Copy the application's JAR file to the container
 COPY target/demo-0.0.1-SNAPSHOT.jar /app/demo.jar
 
-# Expose port 8080
+# Expose the port the app runs on
 EXPOSE 8080
 
-# Command to run the JAR file
-ENTRYPOINT ["java", "-jar", "demo.jar"]
+# Run the jar file
+ENTRYPOINT ["java", "-jar", "app.jar"]
