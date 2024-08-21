@@ -37,8 +37,11 @@ export MAVEN_HOME=/opt/maven
 export PATH=${M2_HOME}/bin:${PATH}
 EOF
 ```
+```bash
 $ ln -s /opt/maven/bin/mvn /usr/bin/mvn
 ```
+Check Maven version which will also show Java Homepath
+```bash
 $ mvn --version
 ```
 ### Clone the project
