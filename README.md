@@ -20,12 +20,16 @@ $ sudo apt install openjdk-17-jdk
 ```bash
 $ cd /tmp; wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
 ```
+```bash
 $ tar xvf apache-maven-3.9.9-bin.tar.gz
 ```
+```bash
 $ mv apache-maven-3.9.9 /opt/maven
 ```
+```bash
 $chown -R root:root /opt/maven
 ```
+```bash
 $ cat <<EOF >> /etc/profile.d/mymavenvars.sh
 export JAVA_HOME=/usr/lib/jvm/default-java
 export M2_HOME=/opt/maven
