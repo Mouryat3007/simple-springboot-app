@@ -10,6 +10,6 @@ public class HomeController {
 
     @GetMapping
     public String home() {
-        return "Hello, This is create by Mourya. This is triggred by github webhook whi h is CI/CD";
+        return "Hello, This is create by Mourya. This is triggred by github webhook which is CI/CD. This is deployed using docker container";
     }
 }
