@@ -12,25 +12,25 @@ This is a minimal Spring Boot application that serves a "Hello, World!" message 
 #### Install Java
 
 ```bash
-$ sudo apt install openjdk-17-jdk
+ sudo apt install openjdk-17-jdk
 ```
 
 #### Download, Install Maven and Set PATH
 
 ```bash
-$ cd /tmp; wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
+ cd /tmp; wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
 ```
 ```bash
-$ tar xvf apache-maven-3.9.9-bin.tar.gz
+ tar xvf apache-maven-3.9.9-bin.tar.gz
 ```
 ```bash
-$ mv apache-maven-3.9.9 /opt/maven
+ mv apache-maven-3.9.9 /opt/maven
 ```
 ```bash
-$chown -R root:root /opt/maven
+chown -R root:root /opt/maven
 ```
 ```bash
-$ cat <<EOF >> /etc/profile.d/mymavenvars.sh
+ cat <<EOF >> /etc/profile.d/mymavenvars.sh
 export JAVA_HOME=/usr/lib/jvm/default-java
 export M2_HOME=/opt/maven
 export MAVEN_HOME=/opt/maven
@@ -38,11 +38,11 @@ export PATH=${M2_HOME}/bin:${PATH}
 EOF
 ```
 ```bash
-$ ln -s /opt/maven/bin/mvn /usr/bin/mvn
+ ln -s /opt/maven/bin/mvn /usr/bin/mvn
 ```
 Check Maven version which will also show Java Homepath
 ```bash
-$ mvn --version
+ mvn --version
 ```
 ### Clone the project
 
