@@ -105,13 +105,13 @@ docker tag simple-spring-boot-app:latest yourusername/simple-spring-boot-app:lat
 
 ### Jenkins 
 1. Under general select GitHub project from options below
-2. > paste your github URL 
-3. > In Build Triggers section select GitHub hook trigger for GITScm polling
+2. paste your github URL 
+3. In Build Triggers section select GitHub hook trigger for GITScm polling
 
 ### webhook
 1. Go to your github repo and click on settings
-2. > click on webhook and add webhook
-3. > add your url in Payload URL *
+2. click on webhook and add webhook
+3. add your url in Payload URL *
 4. http://<>your-jenkins-url/github-webhook/
 
 ## When ever there are changes in the github Repo the build is automatically trigged in jenkins
