@@ -13,6 +13,7 @@ This is a minimal Spring Boot application that serves a "Hello, World!" message 
 
 ```bash
 $ sudo apt install openjdk-17-jdk
+```
 
 #### Download, Install Maven and Set PATH
 
