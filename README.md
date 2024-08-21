@@ -58,5 +58,16 @@ To build the project, navigate to the root directory of the project and run:
 $ cd simple-springboot-app
 ```
 ```bash
-mvn clean package
+$ mvn clean package
 ```
+### Run the Jar file from the target folder
+
+```bash
+$ java -jar target/demo-0.0.1-SNAPSHOT.jar
+```
+### Check on local 
+
+# <localport>:8080/
+
+
+
