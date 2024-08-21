@@ -67,7 +67,7 @@ $ java -jar target/demo-0.0.1-SNAPSHOT.jar
 ```
 ### Check on local 
 
-# <localport>:8080/
+# http://<localport>:8080/
 
 
 
