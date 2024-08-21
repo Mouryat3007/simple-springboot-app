@@ -69,5 +69,7 @@ $ java -jar target/demo-0.0.1-SNAPSHOT.jar
 
 ## http://localport:8080/
 
+### MIT License
 
+You are free to use, copy, modify, and distribute this software for any purpose. The software is provided "as is," without warranty of any kind.
 
