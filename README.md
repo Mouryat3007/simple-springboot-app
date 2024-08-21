@@ -69,3 +69,26 @@ $ java -jar target/demo-0.0.1-SNAPSHOT.jar
 
 ## http://localport:8080/
 
+### Steps to Push Docker Image to a Repository
+1. Login to Docker Hub or Private Registry
+```bash
+docker login
+```
+Enter your Docker Hub username and password when prompted.
+
+2. Tag Your Docker Image
+To tag your image, use the format <repository>/<image>:<tag>. Here’s how you can do it:
+
+```bash
+docker tag <local-image>:<local-tag> <dockerhub-username>/<repository>:<tag>
+```
+
+Example
+```bash
+docker tag simple-spring-boot-app:latest yourusername/simple-spring-boot-app:latest
+```
+3. Push the Docker Image
+```bash
+ docker push <dockerhub-username>/<repository>:<tag>
+```
+
