@@ -98,20 +98,20 @@ docker tag simple-spring-boot-app:latest yourusername/simple-spring-boot-app:lat
  docker push <dockerhub-username>/<repository>:<tag>
 ```
 ### You can also create a CI/CD pipeline 
-The script is included in the repo
-Copy paste the script in the jenkins job pipeline while creating a job
-Add docker credentials as username and password in jenkins
-ID and description = docker
+1. The script is included in the repo
+2. Copy paste the script in the jenkins job pipeline while creating a job
+3. Add docker credentials as username and password in jenkins
+4. ID and description = docker
 
 ### Jenkins 
-Under general select GitHub project from options below
-> paste your github URL 
-> In Build Triggers section select GitHub hook trigger for GITScm polling
+1. Under general select GitHub project from options below
+2. > paste your github URL 
+3. > In Build Triggers section select GitHub hook trigger for GITScm polling
 
 ### webhook
-Go to your github repo and click on settings
-> click on webhook and add webhook
-> add your url in Payload URL *
-  http://<>your-jenkins-url/github-webhook/
+1. Go to your github repo and click on settings
+2. > click on webhook and add webhook
+3. > add your url in Payload URL *
+4. http://<>your-jenkins-url/github-webhook/
 
 ## When ever there are changes in the github Repo the build is automatically trigged in jenkins
