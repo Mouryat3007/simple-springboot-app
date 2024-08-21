@@ -69,6 +69,12 @@ $ java -jar target/demo-0.0.1-SNAPSHOT.jar
 
 ## http://localport:8080/
 
+### Build Docker Image
+
+```bash
+docker build -t springboot .
+```
+
 ### Steps to Push Docker Image to a Repository
 1. Login to Docker Hub or Private Registry
 ```bash
