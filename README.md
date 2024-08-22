@@ -47,7 +47,7 @@ Check Maven version which will also show Java Homepath
 ### Clone the project
 
 ```bash
-$ git clone https://github.com/Mouryat3007/simple-springboot-app.git
+ git clone https://github.com/Mouryat3007/simple-springboot-app.git
 ```
 
 ### Building the Project
